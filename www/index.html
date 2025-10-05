@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Master British English pronunciation with interactive phonetics training">
+    <meta name="theme-color" content="#b80000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>BBC English Phonetics Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icon-512.svg">
+    <link rel="apple-touch-icon" href="icon-512.svg">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splash-screen">
+        <svg class="splash-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" fill="white"/>
+            <text x="50" y="65" font-size="60" text-anchor="middle" fill="#b80000" font-weight="bold">P</text>
+        </svg>
+        <h1 class="splash-title">BBC English Phonetics</h1>
+        <p class="splash-subtitle">Loading your pronunciation trainer...</p>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>BBC English Phonetics Trainer</h1>
+            <p class="subtitle">Master British English pronunciation with interactive phonetics</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="consonants">
+                <i class="fas fa-volume-up"></i> Consonants
+            </button>
+            <button class="tab-btn" data-tab="vowels">
+                <i class="fas fa-music"></i> Vowels
+            </button>
+        </div>
+
+        <div id="consonants" class="tab-content active">
+            <h2>Consonant Sounds</h2>
+            <div class="phonemes-grid" id="consonants-grid"></div>
+        </div>
+
+        <div id="vowels" class="tab-content">
+            <h2>Vowel Sounds</h2>
+            <div class="phonemes-grid" id="vowels-grid"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/3_ued" target="_blank" rel="noopener" class="social-link"><i class="fab fa-instagram"></i> @3_ued</a>
+            <a href="https://t.me/alakrab107" target="_blank" rel="noopener" class="social-link"><i class="fab fa-telegram"></i> @alakrab107</a>
+        </div>
+        <p class="copyright">© 2023 BBC English Phonetics Trainer</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <noscript>
+        <div style="padding: 20px; text-align: center; background-color: #f8d7da; color: #721c24; margin: 20px;">
+            This application requires JavaScript to function properly. Please enable JavaScript in your browser settings.
+        </div>
+    </noscript>
+</body>
+</html>
