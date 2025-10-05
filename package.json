@@ -1,0 +1,31 @@
+{
+  "name": "bbc-english-phonetics-trainer",
+  "version": "1.0.0",
+  "description": "Master British English pronunciation with interactive phonetics training",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx cap serve",
+    "build": "mkdir -p www && cp -r *.html *.css *.js *.svg *.json sounds www/",
+    "cap:init": "npx cap init BBC-English-Phonetics com.phonetics.bbctrainer --web-dir www",
+    "cap:add": "npx cap add android",
+    "cap:copy": "npx cap copy android",
+    "cap:open": "npx cap open android",
+    "cap:build": "npm run build && npm run cap:copy && npm run cap:open"
+  },
+  "keywords": [
+    "phonetics",
+    "english",
+    "pronunciation",
+    "bbc",
+    "education"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/core": "^5.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.0.0"
+  }
+}
